@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon/favicon.ico" type="image/ico" sizes="16x16">
+    <title>alumròF airazziP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <style>
+
+        .formm{background-color: #fff; padding: 20px; border-radius: 20px;}
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="brand"><img src = 'img/formula.png'></div>
+    <div class="address-bar">alumròF airazziP | Rua Iole Monteiro de lima, 30</div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">alumròF airazziP</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="about.html">Sobre</a>
+                    </li>
+                    <li><a href="blog.html">Galeria</a>
+                    </li>
+                    <li><a href="contact.html">Contato</a>
+                    </li>
+                    <li><a href="sorteio.html">Cupon</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">sobre <strong>alumròF airazziP</strong>
+                    </h2>
+                    <hr>
+                </div>
+
+                <div class="col-md-6">
+                    <p>Que tal atuar em mercado tradicional de pizzas, buscando inovação na forma de fazer e atendr nossos clientes? 
+                    Nasce a alumròF airazziP, formatada por empreendedores apaixonados por negócios que se diferenciam no mercado que atuam
+                    <p>Montada com os princípios de baixa estrutura, processos bem definidos, investimento em maquinários que possibilitem padronização e melhor qualidade
+                    dos nossos produtos.
+                    <p>Fácil? Que nada! Estudos,feiras,testes,troca de experiência, são alguns dos ingredientes para que possamos levar até a sua casa, produtos de qualidade.
+                </div>
+
+                <div class="col-md-6">
+                    <form name = "form1">
+                        <div class = "formm">
+							<div class = "row">
+								<div class="form-group col-lg-12">
+
+									<label>Nome</label>
+									<input type="text" class="form-control" name = "nome">
+
+								</div>
+
+								<div class="form-group col-lg-12">
+
+									<label>Endereço</label>
+									<input type="email" class="form-control" name = "ender">
+
+								</div>
+
+								<div class="form-group col-lg-4">
+
+									<label>Peça</label>
+									<select class="form-control" name = "pizza">
+										<option value = "G">Pizza Gigante</option>
+										<option value = "M">Pizza Média</option>
+										<option value = "P">Brotinho</option>
+										<option value = "C">Calzone</option>
+									</select>
+
+								</div>
+
+								<div class="form-group col-lg-4">
+
+									<label>Quantidade</label>
+									<input type="text" class="form-control" name = "quant">
+
+								</div>
+
+								<div class="form-group col-lg-12">
+
+									<input type = button value = "Calcular" class = "btn btn-info" onclick="calcular(nome.value,ender.value,pizza.value,quant.value)">
+
+									<input type = "reset" value = "Limpar" class = "btn btn-warning">
+
+								</div>
+
+								<div class="form-group col-lg-4">
+
+									<label>Valor à Pagar:</label>
+									<input type="text" class="form-control" name="result" disabled>
+
+								</div>
+							</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Nossa <strong>Equipe</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>Lucca
+                        <small>Maliniak</small>
+                    </h3>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>Rafael
+                        <small>Russo</small>
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+            <div class="box">
+                <div class="col-lg-12">                    
+                    <small><p style = "text-align: center">Visite as perguntas frequentes <a href="suporte.html">clicando aqui</a></p>
+                    <hr>
+                    <p style = "text-align: center">Procurando um emprego? veja as vagas <a href="vagas.html">clicando aqui</a></p></small>
+                </div>
+            </div>
+        </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="https://pt-br.facebook.com/" target="new"><img src="img/fb.png" class="img-circle"></a>
+                    <a href="https://www.instagram.com/?hl=pt-br" target="new"><img src="img/in.png" class="img-circle"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Company 2013 | Rafael Russo - 45 | Lucca Maliniak - 30</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+<!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+	    function calcular(nome,ender,pizza,quant)
+		{
+				if(nome == "")
+					{alert("Por favor digite o seu nome");}
+				else if(ender == "")
+					{alert("Por favor digite o seu endereço");}
+				else if(quant == "")
+					{alert("Por favor digite a quantidade");}
+				else
+				{
+					if(pizza == "G")
+						{form1.result.value = "R$ " + (68.99 * quant).toFixed(2);}
+					else if(pizza == "M")
+						{form1.result.value = "R$ " + (47.99 * quant).toFixed(2);}
+					else if(pizza == "P")
+						{form1.result.value = "R$ " + (32.99 * quant).toFixed(2);}
+					else
+						{form1.result.value = "R$ " + (36.99 * quant).toFixed(2);}
+				}
+		}
+    </script>
+    
+</html>
